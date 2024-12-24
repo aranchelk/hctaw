@@ -1,0 +1,12 @@
+# This file is yaml
+'app/Main.hs':
+    - 'stack build && stack exec cardbuilder-exe'
+'src/*.hs':
+    - 'stack build && stack exec cardbuilder-exe'
+'scripts/*.hs':
+    - './${FILE}'
+'package.yaml':
+    - 'stack build && stack exec cardbuilder-exe'
+
+'test/*.hs'
+    - 'stack test' 

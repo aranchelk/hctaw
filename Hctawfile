@@ -1,0 +1,6 @@
+# This file is yaml
+'test.js':
+    - 'ls -l test.js'
+    - 'echo "Nothing else to do."'
+'*.js':
+    - 'echo "The name of the matched file is: ${FILE}"'
